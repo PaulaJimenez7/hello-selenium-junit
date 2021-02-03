@@ -13,24 +13,6 @@ pipeline {
                     sh './gradlew clean test'
                 }              
             }
-            post{
-                always{
-                    junit 'build/test-results/test/TEST-*.xml'
-                    jacoco(execPattern: 'build/jacoco/test.exec')
-                }
-            }
-        }
-        stage('build') {
-            steps {
-                withGradle{
-                    sh './gradlew assemble'
-                } 
-            }
-            post{
-                success{
-                    archiveArtifacts 'build/libs/*.jar'
-                }
-            }
         }
     }
 }
