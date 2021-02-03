@@ -1,0 +1,34 @@
+1612366229206	geckodriver	INFO	Listening on 127.0.0.1:1192
+1612366229411	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqoenTX"
+*** You are running in headless mode.
+
+(firefox:89717): GLib-GObject-WARNING **: 16:30:31.981: invalid (NULL) pointer instance
+
+(firefox:89717): GLib-GObject-CRITICAL **: 16:30:31.981: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:90026): GLib-GObject-WARNING **: 16:30:37.731: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:90026): GLib-GObject-CRITICAL **: 16:30:37.731: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:90047): GLib-GObject-WARNING **: 16:30:38.836: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:90047): GLib-GObject-CRITICAL **: 16:30:38.836: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:90138): GLib-GObject-WARNING **: 16:30:48.023: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:90138): GLib-GObject-CRITICAL **: 16:30:48.023: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612366249861	Marionette	INFO	Listening on port 32887
+1612366250192	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612366263089	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1612366269412	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1612366300576	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1612366345785	Marionette	INFO	Stopped listening on port 32887

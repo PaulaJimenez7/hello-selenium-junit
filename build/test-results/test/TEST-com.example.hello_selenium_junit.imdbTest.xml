@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.hello_selenium_junit.imdbTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T15:51:52" hostname="ubuntu" time="17.989">
+  <properties/>
+  <testcase name="imdbwandavision()" classname="com.example.hello_selenium_junit.imdbTest" time="17.989"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1612367512465	geckodriver	INFO	Listening on 127.0.0.1:6408
+1612367512495	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehOpywc"
+*** You are running in headless mode.
+
+(firefox:98411): GLib-GObject-WARNING **: 16:51:53.298: invalid (NULL) pointer instance
+
+(firefox:98411): GLib-GObject-CRITICAL **: 16:51:53.302: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:98468): GLib-GObject-WARNING **: 16:51:54.254: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:98468): GLib-GObject-CRITICAL **: 16:51:54.254: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:98707): GLib-GObject-WARNING **: 16:51:54.755: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:98707): GLib-GObject-CRITICAL **: 16:51:54.761: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:98762): GLib-GObject-WARNING **: 16:51:57.332: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:98762): GLib-GObject-CRITICAL **: 16:51:57.332: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612367517759	Marionette	INFO	Listening on port 39495
+1612367517890	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 4:51:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1612367526982	Marionette	INFO	Stopped listening on port 39495
+]]></system-err>
+</testsuite>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.hello_selenium_junit.SearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T15:51:00" hostname="ubuntu" time="19.538">
+  <properties/>
+  <testcase name="searchdevops()" classname="com.example.hello_selenium_junit.SearchTest" time="19.538"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1612367460212	geckodriver	INFO	Listening on 127.0.0.1:32227
+1612367460260	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDXIHhy"
+*** You are running in headless mode.
+
+(firefox:97778): GLib-GObject-WARNING **: 16:51:01.264: invalid (NULL) pointer instance
+
+(firefox:97778): GLib-GObject-CRITICAL **: 16:51:01.264: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:97828): GLib-GObject-WARNING **: 16:51:02.497: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:97828): GLib-GObject-CRITICAL **: 16:51:02.497: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:97845): GLib-GObject-WARNING **: 16:51:02.799: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:97845): GLib-GObject-CRITICAL **: 16:51:02.799: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:97908): GLib-GObject-WARNING **: 16:51:05.903: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:97908): GLib-GObject-CRITICAL **: 16:51:05.903: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612367466386	Marionette	INFO	Listening on port 42973
+1612367466525	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 4:51:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1612367478271	Marionette	INFO	Stopped listening on port 42973
+]]></system-err>
+</testsuite>
