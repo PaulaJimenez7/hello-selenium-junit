@@ -62,7 +62,7 @@ public class RobobarTest {
     driver.findElement(By.id("ageInput")).click();
     driver.findElement(By.id("ageInput")).sendKeys("25");
     driver.findElement(By.cssSelector(".btn-success")).click();
-    vars.put("total-bebidas", driver.findElement(By.cssSelector(".display-4")).getText());
+    vars.put("total-bebidas", driver.findElement(By.xpath("/html/body/robo-robobar/div/div[2]/robo-success/div[1]/h2")).getText());
     assertEquals(vars.get("total-bebidas").toString(), "3 drinks");
   }
 }

@@ -208,7 +208,7 @@
       "id": "8cfb1ead-8b50-4ccc-a174-49a175aab956",
       "comment": "",
       "command": "storeText",
-      "target": "css=.display-4",
+      "target": "xpath=/html/body/robo-robobar/div/div[2]/robo-success/div[1]/h2",
       "targets": [],
       "value": "total-bebidas"
     }, {
