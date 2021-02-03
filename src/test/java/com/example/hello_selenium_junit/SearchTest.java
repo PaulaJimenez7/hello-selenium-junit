@@ -22,6 +22,7 @@ package com.example.hello_selenium_junit;
     import org.openqa.selenium.Alert;
     import org.openqa.selenium.Keys;
 
+    import javax.security.auth.login.Configuration;
     import java.time.Duration;
     import java.util.*;
     import java.net.MalformedURLException;
@@ -36,6 +37,7 @@ public class SearchTest {
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(true);
         driver = new FirefoxDriver(options);
+
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }

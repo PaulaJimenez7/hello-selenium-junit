@@ -10,6 +10,7 @@ package com.example.hello_selenium_junit;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.chrome.ChromeDriver;
+        import org.openqa.selenium.firefox.FirefoxOptions;
         import org.openqa.selenium.remote.RemoteWebDriver;
         import org.openqa.selenium.remote.DesiredCapabilities;
         import org.openqa.selenium.Dimension;
@@ -46,12 +47,12 @@ public class imdbTest  {
         // 1 | open | / |
         driver.get("https://www.imdb.com/");
         // 2 | click | id=suggestion-search |
+        WebElement wresult = new WebDriverWait(driver,7)
+                .until(driver -> driver.findElement(By.id("suggestion-search")));
         driver.findElement(By.id("suggestion-search")).click();
         // 3 | type | name=q | wandavision
         driver.findElement(By.name("q")).sendKeys("wandavision");
         // 4 | sendKeys | name=q | ${KEY_ENTER}
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        // 5 | click | linkText=WandaVision |
-        driver.findElement(By.linkText("WandaVision")).click();
     }
 }

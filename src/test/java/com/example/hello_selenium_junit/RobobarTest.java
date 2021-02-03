@@ -11,6 +11,7 @@ package com.example.hello_selenium_junit;
     import org.openqa.selenium.WebDriver;
     import org.openqa.selenium.firefox.FirefoxDriver;
     import org.openqa.selenium.chrome.ChromeDriver;
+    import org.openqa.selenium.firefox.FirefoxOptions;
     import org.openqa.selenium.remote.RemoteWebDriver;
     import org.openqa.selenium.remote.DesiredCapabilities;
     import org.openqa.selenium.Dimension;
@@ -44,7 +45,8 @@ package com.example.hello_selenium_junit;
         @Test
         public void robobar() {
             driver.get("http://localhost:3000/");
-            driver.manage().window().setSize(new Dimension(561, 712));
+            WebElement roboresult = new WebDriverWait(driver,7)
+                    .until(driver -> driver.findElement(By.cssSelector("tr:nth-child(4) > .ng-binding")));
             vars.put("total", driver.findElement(By.cssSelector("tr:nth-child(4) > .ng-binding")).getText());
             assertEquals(vars.get("total").toString(), "€0.00");
             driver.findElement(By.cssSelector(".ng-scope:nth-child(1) > td .input-group-append > .btn")).click();
@@ -57,7 +59,8 @@ package com.example.hello_selenium_junit;
             vars.put("total", driver.findElement(By.cssSelector("tr:nth-child(4) > .ng-binding")).getText());
             assertEquals(vars.get("total").toString(), "€6.25");
             driver.findElement(By.cssSelector(".btn-success")).click();
-            js.executeScript("window.scrollTo(0,0)");
+            WebElement robresult = new WebDriverWait(driver,7)
+                    .until(driver -> driver.findElement(By.cssSelector(".ng-scope:nth-child(1) > .ng-binding:nth-child(3)")));
             vars.put("precio", driver.findElement(By.cssSelector(".ng-scope:nth-child(1) > .ng-binding:nth-child(3)")).getText());
             assertEquals(vars.get("precio").toString(), "€1.25");
             vars.put("precioBeer", driver.findElement(By.cssSelector(".ng-scope:nth-child(2) >.ng-binding:nth-child(3)")).getText());
@@ -67,6 +70,8 @@ package com.example.hello_selenium_junit;
             driver.findElement(By.id("ageInput")).click();
             driver.findElement(By.id("ageInput")).sendKeys("25");
             driver.findElement(By.cssSelector(".btn-success")).click();
+            WebElement roresult = new WebDriverWait(driver,7)
+                    .until(driver -> driver.findElement(By.xpath("/html/body/robo-robobar/div/div[2]/robo-success/div[1]/h2")));
             vars.put("total-bebidas", driver.findElement(By.xpath("/html/body/robo-robobar/div/div[2]/robo-success/div[1]/h2")).getText());
             assertEquals(vars.get("total-bebidas").toString(), "3 drinks");
         }
