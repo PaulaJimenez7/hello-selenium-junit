@@ -21,6 +21,7 @@ targetCompatibility = 1.8
 dependencies {
     implementation('com.codeborne:selenide:5.16.2')
     testImplementation("io.qameta.allure:allure-selenide:${allureVersion}")
+    testImplementation('org.hamcrest:hamcrest:2.2')
     testImplementation('org.slf4j:slf4j-simple:1.7.29')
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
@@ -28,6 +29,7 @@ dependencies {
 }
 
 test {
+    systemProperties["selenide.browser"] = "firefox"
     useJUnitPlatform()
 }
 allure {
