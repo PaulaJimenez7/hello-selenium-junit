@@ -1,16 +1,18 @@
-com/example/hello_selenium_junit/SearchTest.java
- com.example.hello_selenium_junit.SearchTest
-com/example/hello_selenium_junit/imdbTest.java
- com.example.hello_selenium_junit.imdbTest
-com/example/hello_selenium_junit/RobobarTest.java
- com.example.hello_selenium_junit.RobobarTest
 com/example/hello_selenium_junit/MainPageTest.java
  com.example.hello_selenium_junit.MainPageTest
+com/example/hello_selenium_junit/imdbTest.java
+ com.example.hello_selenium_junit.imdbTest
+com/example/hello_selenium_junit/RobobarRPTest.java
+ com.example.hello_selenium_junit.RobobarRPTest
+com/example/hello_selenium_junit/RobobarTest.java
+ com.example.hello_selenium_junit.RobobarTest
+com/example/hello_selenium_junit/SearchTest.java
+ com.example.hello_selenium_junit.SearchTest
 com/example/hello_selenium_junit/SearchRChromeTest.java
  com.example.hello_selenium_junit.SearchRChromeTest
+com/example/hello_selenium_junit/RobobarRemoteTest.java
+ com.example.hello_selenium_junit.RobobarRemoteTest
 com/example/hello_selenium_junit/SearchRemoteTest.java
  com.example.hello_selenium_junit.SearchRemoteTest
 com/example/hello_selenium_junit/SearchROperaTest.java
  com.example.hello_selenium_junit.SearchROperaTest
-com/example/hello_selenium_junit/RobobarRemoteTest.java
- com.example.hello_selenium_junit.RobobarRemoteTest

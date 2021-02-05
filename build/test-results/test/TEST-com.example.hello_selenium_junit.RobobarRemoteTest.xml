@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.hello_selenium_junit.RobobarRemoteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-05T09:31:44" hostname="ubuntu" time="12.297">
+<testsuite name="com.example.hello_selenium_junit.RobobarRemoteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-05T11:07:27" hostname="ubuntu" time="15.002">
   <properties/>
-  <testcase name="robobar()" classname="com.example.hello_selenium_junit.RobobarRemoteTest" time="12.297"/>
+  <testcase name="robobar()" classname="com.example.hello_selenium_junit.RobobarRemoteTest" time="15.002"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Feb 05, 2021 10:31:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Feb 05, 2021 12:07:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

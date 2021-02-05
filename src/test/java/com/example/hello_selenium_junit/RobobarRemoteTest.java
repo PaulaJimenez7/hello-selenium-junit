@@ -31,8 +31,12 @@ public class RobobarRemoteTest{
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
+
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws MalformedURLException{
+        ChromeOptions chromeOptions = new ChromeOptions();
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);
+
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
@@ -41,9 +45,8 @@ public class RobobarRemoteTest{
         driver.quit();
     }
     @Test
-    public void robobar() throws MalformedURLException {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);
+    public void robobar() {
+
         driver.get("http://10.250.13.1:3000/");
         WebElement roboresult = new WebDriverWait(driver,7)
                 .until(driver -> driver.findElement(By.cssSelector("tr:nth-child(4) > .ng-binding")));
