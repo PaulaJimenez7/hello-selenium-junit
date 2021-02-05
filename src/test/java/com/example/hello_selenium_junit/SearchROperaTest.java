@@ -66,7 +66,7 @@ public class SearchROperaTest {
         // 7 | sendKeys | name=q | ${KEY_ENTER}
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
         // 8 | click | css=.g:nth-child(10) .LC20lb > span |
-        WebElement googleresult = new WebDriverWait(driver,20)
+        WebElement googleresult = new WebDriverWait(driver,30)
                 .until(driver -> driver.findElement(By.xpath("//div[@id=\'rso\']/div[3]/div/div/a/h3/span")));
         driver.findElement(By.xpath("//div[@id=\'rso\']/div[3]/div/div/a/h3/span")).click();
     }
