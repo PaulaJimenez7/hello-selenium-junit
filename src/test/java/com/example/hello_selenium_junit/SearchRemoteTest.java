@@ -28,12 +28,14 @@ package com.example.hello_selenium_junit;
         import java.net.MalformedURLException;
         import java.net.URL;
 
-public class SearchRemoteTest {
+public class SearchRemoteTest throws MalformedURLException{
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeEach
     public void setUp() {
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), firefoxOptions);
        js = (JavascriptExecutor) driver;
        vars = new HashMap<String, Object>();
     }
@@ -42,9 +44,8 @@ public class SearchRemoteTest {
         driver.quit();
     }
     @Test
-    public void searchdevops() throws InterruptedException, MalformedURLException {
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), firefoxOptions);
+    public void searchdevops() throws InterruptedException {
+        
         // Test name: search-devops
         // Step # | name | target | value
         // 1 | open | / |
