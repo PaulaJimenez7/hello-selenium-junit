@@ -12,3 +12,5 @@ com/example/hello_selenium_junit/SearchRemoteTest.java
  com.example.hello_selenium_junit.SearchRemoteTest
 com/example/hello_selenium_junit/SearchROperaTest.java
  com.example.hello_selenium_junit.SearchROperaTest
+com/example/hello_selenium_junit/RobobarRemoteTest.java
+ com.example.hello_selenium_junit.RobobarRemoteTest
