@@ -33,7 +33,9 @@ public class SearchRemoteTest {
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
+       FirefoxOptions firefoxOptions = new FirefoxOptions();
+       driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), firefoxOptions);
        js = (JavascriptExecutor) driver;
        vars = new HashMap<String, Object>();
     }
@@ -42,9 +44,8 @@ public class SearchRemoteTest {
         driver.quit();
     }
     @Test
-    public void searchdevops() throws InterruptedException, MalformedURLException {
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), firefoxOptions);
+    public void searchdevops() throws InterruptedException {
+
         // Test name: search-devops
         // Step # | name | target | value
         // 1 | open | / |

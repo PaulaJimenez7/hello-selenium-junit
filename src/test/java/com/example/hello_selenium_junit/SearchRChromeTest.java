@@ -34,7 +34,9 @@ public class SearchRChromeTest {
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
+        ChromeOptions chromeOptions = new ChromeOptions();
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
@@ -43,9 +45,8 @@ public class SearchRChromeTest {
         driver.quit();
     }
     @Test
-    public void searchdevops() throws InterruptedException, MalformedURLException {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);
+    public void searchdevops() throws InterruptedException{
+
         // Test name: search-devops
         // Step # | name | target | value
         // 1 | open | / |
@@ -64,7 +65,7 @@ public class SearchRChromeTest {
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
         // 8 | click | css=.g:nth-child(10) .LC20lb > span |
         //driver.findElement(By.xpath("//div[@id=\'rso\']/div[3]/div/div/a/h3/span")).click();
-        WebElement googleresult = new WebDriverWait(driver,7)
+        WebElement googleresult = new WebDriverWait(driver,20)
                 .until(driver -> driver.findElement(By.xpath("//div[@id=\'rso\']/div[3]/div/div/a/h3/span")));
         driver.findElement(By.xpath("//div[@id=\'rso\']/div[3]/div/div/a/h3/span")).click();
     }

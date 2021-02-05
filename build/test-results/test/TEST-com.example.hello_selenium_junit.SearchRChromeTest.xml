@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.hello_selenium_junit.SearchRChromeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-05T11:57:24" hostname="ubuntu" time="17.94">
+  <properties/>
+  <testcase name="searchdevops()" classname="com.example.hello_selenium_junit.SearchRChromeTest" time="17.94"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Feb 05, 2021 12:57:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
