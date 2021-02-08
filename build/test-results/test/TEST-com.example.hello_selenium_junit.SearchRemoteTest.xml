@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.hello_selenium_junit.SearchRemoteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-05T12:47:25" hostname="ubuntu" time="26.634">
+<testsuite name="com.example.hello_selenium_junit.SearchRemoteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-08T08:41:19" hostname="ubuntu" time="27.361">
   <properties/>
-  <testcase name="searchdevops()" classname="com.example.hello_selenium_junit.SearchRemoteTest" time="26.634"/>
+  <testcase name="searchdevops()" classname="com.example.hello_selenium_junit.SearchRemoteTest" time="27.361"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Feb 05, 2021 1:47:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Feb 08, 2021 9:41:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
