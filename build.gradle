@@ -31,7 +31,11 @@ dependencies {
 
 test {
     systemProperties["selenide.browser"] = "firefox"
+<<<<<<< HEAD
     //systemProperties["selenide.headless"] = "true"
+=======
+    systemProperties["selenide.headless"] = "true"
+>>>>>>> 908e80b92e4d637f08b12ef63c2dca0a95c4d57a
     systemProperties["selenide.remote"] = "http://localhost:4444/wd/hub"
 
     useJUnitPlatform()
@@ -46,4 +50,8 @@ allure {
 }
 checkstyle{
     ignoreFailures = true
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 908e80b92e4d637f08b12ef63c2dca0a95c4d57a
